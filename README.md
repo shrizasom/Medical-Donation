@@ -43,10 +43,20 @@ NGO DETAILS:
  ![image](https://user-images.githubusercontent.com/62815719/181061966-1d7ac701-911d-4392-9084-886180c3d72b.png)
 
 VIEW, EDIT AND BUY MEDICINE:
+
+
+
+
 ADMIN :
+
+
+
 ![image](https://user-images.githubusercontent.com/62815719/181062170-4908b04d-bc7b-446a-9977-caf68d5fd6c7.png)
  
 USER :
+
+
+
  ![image](https://user-images.githubusercontent.com/62815719/181062215-4c7cb6f3-9d37-4e84-a3c8-b6417b81f1d0.png)
 
 VIEW ORDERS:
