@@ -3,7 +3,7 @@ MEDICAL DONATION
 
  
  
-FONT END: -
+
 DASHBOARD:
  ![image](https://user-images.githubusercontent.com/62815719/181061376-90708598-576c-4567-abd6-e952b78c5b29.png)
 ![image](https://user-images.githubusercontent.com/62815719/181061436-59e732fb-d4f7-443d-8a99-aa400d70913b.png)
