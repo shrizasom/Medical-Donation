@@ -17,6 +17,9 @@ LOGIN PAGE:
  ![image](https://user-images.githubusercontent.com/62815719/181061595-61d5b181-672b-44b1-a1e9-c6a3a181647e.png)
 
 NAVBAR:
+
+
+
  ![image](https://user-images.githubusercontent.com/62815719/181061629-81214f59-6aef-4d7a-83d7-d8024a42c8a3.png)
 
 CHANGE PASSWORD PAGE:
@@ -72,15 +75,23 @@ ASSIGN MEDICINE PAGE:
 ![image](https://user-images.githubusercontent.com/62815719/181062402-a0546dc3-7985-4853-a721-c2eef9342cac.png)
 
 DATABASE:
+
 ![image](https://user-images.githubusercontent.com/62815719/181062497-6ba22fe7-315d-4eda-9199-2aa254763ffe.png)
+
  
 BLOG:
+
+
  ![image](https://user-images.githubusercontent.com/62815719/181062521-78315f60-c92f-476f-ae6c-1415c3a67c88.png)
 
 POST:
+
+
 ![image](https://user-images.githubusercontent.com/62815719/181062560-6e120a89-767c-49ad-aa7f-587e15ab5f17.png)
  
 DONATION:
+
+
 ![image](https://user-images.githubusercontent.com/62815719/181062612-8a732517-2a75-4b4d-8461-43ccbc9a85cf.png)
  
 
