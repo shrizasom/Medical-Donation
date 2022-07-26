@@ -1,0 +1,13 @@
+.dashboard-block{
+    padding-bottom: 200px;
+}
+.container{
+    width: 100%;
+    margin:auto;
+    background-color:black;
+    border: white;
+    color: white;
+    opacity: .5;
+    padding-bottom: 400px;
+    height: 200%;
+}

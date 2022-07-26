@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <b>
+    <div class="table">
+        <div class="container-fluid ml-2">
+            <div class="collapse navbar-collapse">
+                <a class="navbar-brand" routerLink="/userdetails/{{userid}}" *ngIf="loggedin">
+                    {{username}}</a>
+                <a class="navbar-brand"  *ngIf="!loggedin">
+                    Guest</a>
+                <ul class="navbar-nav mr-auto mb-2 ">
+                    <li class="nav-item mr-auto">
+                    <a class="nav-link" routerLink="/">Home</a>
+                    </li>
+                    <li class="nav-item mr-auto" *ngIf="usertype=='admin'">
+                        <a class="nav-link" routerLink="/addngo">Add NGO</a>
+                    </li>
+                    <li class="nav-item mr-auto" *ngIf="usertype=='admin'">
+                        <a class="nav-link" routerLink="/create">Add Medicine</a>
+                    </li>
+                    <li class="nav-item mr-auto" *ngIf="usertype=='admin'">
+                        <a class="nav-link" routerLink="/viewdonation">View Report</a>
+                    </li>
+                    <li class="nav-item mr-auto" *ngIf="usertype=='admin'">
+                        <a class="nav-link" routerLink="/user">User Details</a>
+                    </li>
+                    <li class="nav-item mr-auto" *ngIf="usertype=='admin'">
+                        <a class="nav-link" routerLink="/ngo">NGO Details</a>
+                    </li>
+                    <li class="nav-item mr-auto" *ngIf="usertype=='admin'">
+                        <a class="nav-link" routerLink="/post">Medicine</a>
+                    </li>
+                    <li class="nav-item mr-auto" *ngIf="usertype=='user'">
+                        <a class="nav-link" routerLink="/post">Buy Medicine</a>
+                    </li>
+                    <li class="nav-item mr-auto" *ngIf="usertype=='user'">
+                        <a class="nav-link" routerLink="/vieworder">View Order</a>
+                    </li>
+                    <li class="nav-item mr-auto" *ngIf="usertype=='user'">
+                        <a class="nav-link" routerLink="/donation">Donate Medicine</a>
+                    </li>
+
+
+
+                    <li class="nav-item mr-auto" *ngIf="usertype=='executive'">
+                        <a class="nav-link" routerLink="/viewdonation">View Assigned Users</a>
+                    </li>
+
+
+                    <li class="nav-item mr-auto" *ngIf="usertype=='ngo'">
+                        <a class="nav-link" routerLink="/assign">View Users</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav d-flex justify-content-end">
+                    <li class="nav-item" *ngIf="loggedin">
+                        <a class="nav-link" routerLink="/changepassword/{{userid}}">
+                            Change Password</a>
+                    </li>
+                    <li class="nav-item" *ngIf="loggedin">
+                        <a class="nav-link" (click)="logout()">Logout</a>
+                    </li>
+                    <li class="nav-item" *ngIf="loggedin==false">
+                        <a class="nav-link" routerLink="/login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </b>
+</nav>

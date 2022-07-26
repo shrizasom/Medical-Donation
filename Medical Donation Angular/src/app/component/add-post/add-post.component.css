@@ -1,0 +1,25 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    opacity:1;
+}
+.add-post-block{
+    padding-bottom: 100px;
+}
+.container{
+    width: 100%;
+    margin:auto;
+    background-color:black;
+    border: white;
+    color: white;
+    opacity: .5;
+    padding-bottom: 50px;
+}
+
+button{
+    background-image: linear-gradient(to right top, #37052e, #4e0050, #5c007b, #5800af, #1212eb);
+}
+.image{
+    padding-top: 10%;
+    float: right;
+
+}
