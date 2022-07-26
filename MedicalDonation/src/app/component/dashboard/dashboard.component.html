@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<section class="dashboard-block">
+    <div class="container mt-5 ">
+        <div class="row mt-8 justify-content-center">
+            <div class="col-15 mt-5 ml-100">
+        <div  *ngIf="loggedin">
+            <h1 style="text-indent: 30%;">Welcome {{usertype}} {{username}}!</h1>
+        </div>
+        <div *ngIf="!loggedin">
+            <h1 style="text-indent: 40%;">Welcome Guest!</h1>
+        </div>
+        </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<section class="ngo-block">
+
+<div class="container" >
+  <div class="box mb-8 justify-content-center" 
+      style="position: sticky;height:30%;width:50%;">
+        <h1 style="text-indent: 35%;">View NGO!</h1>
+      </div>
+    <div class="row my-4">
+        <div class="col-md-6" *ngFor="let n of ngo;">
+            
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 postion-relative"
+          >
+            <div class="box col p-4 d-flex flex-column position-static">
+              <h3 class="my-2">Name: {{ n.username }}</h3>
+              <h3 class="my-2">Email ID: {{ n.email }}</h3>
+              <h3 class="my-2">Address: {{ n.address}}</h3>
+              <h3 class="my-2">Contact Number: {{ n.phnum }}</h3>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+</section>

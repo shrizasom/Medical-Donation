@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+<section class="view-donation-block">
+<div class="container">
+    <div class="box mb-8 justify-content-center" style="position: sticky;height:30%;width:50%;">
+        <h1 style="text-indent: 25%;">View Donations!</h1>
+    </div>
+  <div class="row my-4">
+    <div class="col-md-6" *ngFor="let don of d|keyvalue">
+       
+      <div
+        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 postion-relative"
+      >
+        <div class="box col p-4 d-flex flex-column position-static">
+            <h3 class="my-2">Date Of Donation: {{ don.value[0]}}</h3>
+            <h3 class="my-2">Medicine ID: {{ don.value[2]}}</h3>
+            <h3 class="my-2">Medicine Name: {{ don.value[3]}}</h3>
+            <h3 class="my-2">User ID: {{ don.value[4]}}</h3>
+            <h3 class="my-2">User Name: {{ don.value[5]}}</h3>
+            <h3 class="my-2">Is Medicine Collected: {{ don.value[1]}}</h3>
+            <div *ngIf="don.value[1]">
+                <h3 class="my-2">Executive ID: {{ don.value[6]}}</h3>
+                <h3 class="my-2">Executive Name: {{ don.value[7]}}</h3>
+                <h3 class="my-2">NGO ID: {{ don.value[8]}}</h3>
+                <h3 class="my-2">NGO Name: {{ don.value[9]}}</h3>  
+            </div>
+            <div *ngIf="usertype=='executive' && don.value[1]==false">
+                <button class="col-6 btn btn-primary" 
+              (click)="collect(don.key);"
+              >
+                Collect
+          </button>
+            </div>
+            <div *ngIf="usertype=='executive' && don.value[1]==true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" 
+                fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>   
+                </svg><h3>Collected</h3>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
